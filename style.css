@@ -1,0 +1,14 @@
+body{
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;}
