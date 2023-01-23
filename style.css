@@ -28,7 +28,25 @@ header{
         border-radius: 20px;
         margin-bottom: 20px;
     }
-    
+
     p{
         line-height: 1.8rem;
+    }
+
+    #start-button{
+        background-color: rgb(175, 8, 8);
+        /* border-radius: 25px; */
+        color: whitesmoke (0, 0%, 100%);
+        font-size: 25px;
+        line-height: 22px;
+        margin: 16px 16px 50px 20px;
+        padding: 14px 34px;
+        text-align: center;
+        cursor: pointer;
+    }
+    #questions-container{
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
