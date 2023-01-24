@@ -144,4 +144,5 @@ let questionsArray = [
         options:["1996","1995","1994"],
         answer:"1995"
     },]
-
+    
+    
