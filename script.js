@@ -97,5 +97,22 @@ function showResult() {
         }
 };
 
+function startTimer() {
+    timeCountdown = setInterval(function() {
+        totalTime --;
+        timeElement.textContent = totalTime;
+        if (totalTime === 0) {
+        displayScore();
+        }
+    }, 1000);    
+    
+} 
+
+function displayScore() {
+    highScore = totalTime;
+    finalScore.textContent = highScore;
+    clearInterval(timeCountdown);
+    form.style.display = "block";
+};
         
     
