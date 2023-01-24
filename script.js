@@ -141,10 +141,7 @@ let questionsArray = [
     },
     {
         question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
-        correct: "b",
+        options:["1996","1995","1994"],
+        answer:"1995"
     },]
 
