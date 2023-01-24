@@ -55,3 +55,28 @@ function renderQuestions() {
         answer4.addEventListener("click", showResult);
     
 };
+function showResult() {
+
+    let correctAnswer = document.createElement("h3");
+    let wrongAnswer = document.createElement("h3");
+    correctAnswer.textContent = "Well done! That's correct!";
+    wrongAnswer.textContent = "Sorry, that's incorrect!";
+    
+    if (this.textContent === questionsArray[index].answer) {
+        questionElement.appendChild(correctAnswer);
+        setTimeout(function() {
+            questionElement.innerHTML = "";
+            index++;
+            if (index === questionsArray.length) {
+              displayScore();
+      
+            }
+            else {
+      
+              renderQuestions()
+            }
+          }, 1000)
+    }
+    else {
+        questionElement
+    }
