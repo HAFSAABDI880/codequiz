@@ -77,6 +77,25 @@ function showResult() {
             }
           }, 1000)
     }
-    else {
-        questionElement
-    }
+    else { questionElement.appendChild(wrongAnswer)
+        setTimeout(function(){
+                questionElement.innerHTML = "";
+            index++;
+            if (totalTime >= 10) {
+                totalTime = totalTime -10;
+            }        
+            if(index === questionsArray.length) {
+                displayScore();
+            }
+            else {
+                renderQuestions()
+            }
+        
+            timeElement.textContent = totalTime;
+        }, 1000)
+        
+        }
+};
+
+        
+    
