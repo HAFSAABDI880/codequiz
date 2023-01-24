@@ -114,5 +114,15 @@ function displayScore() {
     clearInterval(timeCountdown);
     form.style.display = "block";
 };
-        
+function startQuiz() {
     
+    removeIntroPage();
+
+    // render questions
+    renderQuestions();
+ 
+    startTimer();
+
+    return;
+}       
+
